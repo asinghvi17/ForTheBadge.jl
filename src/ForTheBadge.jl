@@ -12,7 +12,7 @@ module ForTheBadge
             padding = 13,
             h = 50,
             ext = :pdf,
-            filename = join(labels, "_") * ".$ext",
+            filename = join(labels, "_") * ".\$ext",
             textsize = 20,
             showbadg = true
         )
