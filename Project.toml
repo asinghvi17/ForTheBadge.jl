@@ -1,0 +1,13 @@
+name = "ForTheBadge"
+uuid = "64e55fb5-fece-45e4-9f07-6b725a6cb483"
+authors = ["Anshul Singhvi"]
+version = "0.1.0"
+
+[compat]
+julia = "1.2"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
