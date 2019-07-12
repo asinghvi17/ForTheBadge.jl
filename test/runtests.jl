@@ -1,6 +1,13 @@
 using ForTheBadge
 using Test
 
-@testset "ForTheBadge.jl" begin
-    # Write your own tests here.
+testdir = "$(@__DIR__)/../assets/tests"
+
+ispath(testdir) && rm(testdir, recursive = true)
+ispath(testdir) || mkpath(testdir)
+
+cd(testdir)
+
+@testset "create badges" begin
+    @test_nowarn badge("FOR THE", "BADGE")
 end
