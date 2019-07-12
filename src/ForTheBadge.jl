@@ -26,10 +26,10 @@ module ForTheBadge
     Input must be in the form of tuples.
     """
     function badge(
-            labels::NTuple{N, AbstractString};
-            fonts::NTuple{N, AbstractString} = ("$(@__DIR__)../assets/fonts/Roboto-Medium.ttf", "$(@__DIR__)../assets/fonts/Montserrat-ExtraBold.otf"),
-            bgcolours::NTuple{N, T} = (colorant"#a7bfc1", colorant"#5593c8"),
-            textcolours::NTuple{N, T} = (colorant"white", colorant"white"),
+            labels;
+            fonts = ("$(@__DIR__)../assets/fonts/Roboto-Medium.ttf", "$(@__DIR__)../assets/fonts/Montserrat-ExtraBold.otf"),
+            bgcolours = (colorant"#a7bfc1", colorant"#5593c8"),
+            textcolours = (colorant"white", colorant"white"),
             padding = 13,
             h = 50,
             ext = :pdf,
