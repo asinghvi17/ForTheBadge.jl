@@ -9,7 +9,9 @@ ispath(testdir) || mkpath(testdir)
 cd(testdir)
 
 @testset "create badges" begin
-    @test_nowarn badge("FOR THE", "BADGE")
+    badge("FOR THE", "BADGE")
+
+    @test true
 end
 
 print("Created 1 badge.  Tests over for now!")
