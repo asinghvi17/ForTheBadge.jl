@@ -2,7 +2,8 @@ module ForTheBadge
 
     using Colors
     using Luxor
-
+    using Luxor: julia_blue, julia_purple, julia_green, julia_red
+    
     """
         badge(
             labels; # must be the same length as kwargs, so if you
@@ -60,7 +61,7 @@ module ForTheBadge
             showbadge = true
         ) where N where T
 
-        @assert length(labels) == length(fonts) == length(bgcolours) == length(textcolours) 
+        @assert length(labels) == length(fonts) == length(bgcolours) == length(textcolours)
 
         Drawing(800, h, :png) # initialize a dummy, in-memory drawing to get text extents
 
@@ -99,6 +100,6 @@ module ForTheBadge
 
     export badge
 
-    export Luxor.julia_blue, Luxor.julia_purple, Luxor.julia_green, Luxor.julia_red
+    export julia_blue, julia_purple, julia_green, julia_red
 
 end
