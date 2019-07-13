@@ -11,3 +11,5 @@ cd(testdir)
 @testset "create badges" begin
     @test_nowarn badge("FOR THE", "BADGE")
 end
+
+print("Created 1 badge.  Tests over for now!")
